@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/logo.png"
@@ -29,9 +29,21 @@ const menuItems = [
 
 export default function Navbar() {
     const [showDropdown, setShowDropdown] = useState(false);
+    const [navBg, setNavBg] = useState(false);
+
+    const changeNavBg = () => {
+        window.screenY >= 1 ? setNavBg(true) : setNavBg(false);
+        console.log("WORK")
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNavBg);
+
+        return () => window.removeEventListener('scroll', changeNavBg);
+    })
 
     return (
-        <header className="bg-blue-950 flex flex-col items-center py-2 lg:py-4 w-full">
+        <header className={`${navBg ? 'bg-blue-900' : 'bg-transparent'} flex flex-col items-center py-2 lg:py-4 w-full`}>
             <div className="container px-4 lg:flex lg:items-center lg:justify-around w-full">
                 <div className="flex justify-between items-center">
                     <Link href="/#home" className="flex flex-row items-center gap-4 font-bold text-xl">
