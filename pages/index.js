@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Image from "next/image";
+import About from "@/components/about";
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                     </div>
                 </div>
             </header>
+
             <div className="-translate-y-40">
                 <div className="h-0">
                     <svg preserveAspectRatio="none" width="100%" height="300px" viewBox="0 0 1440 600" fill="none"
@@ -44,6 +46,31 @@ export default function Home() {
                          xmlns="http://www.w3.org/2000/svg" className="z-[20] relative">
                         <path
                             className="fill-blue-800"
+                            d="M 0,600 C 0,600 0,400 0,400 C 134.85714285714286,415.3571428571429 269.7142857142857,430.7142857142857 378,434 C 486.2857142857143,437.2857142857143 568.0000000000001,428.5 685,417 C 801.9999999999999,405.5 954.2857142857142,391.2857142857143 1086,388 C 1217.7142857142858,384.7142857142857 1328.857142857143,392.3571428571429 1440,400 C 1440,400 1440,600 1440,600 Z"
+                            stroke="none" />
+                    </svg>
+                </div>
+                <div className="h-[130px]" />
+            </div>
+
+            <About />
+
+            <div>
+                <div className="h-0">
+                    <svg preserveAspectRatio="none" width="100%" height="200px" viewBox="0 0 1440 600" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" className="z-[20] relative rotate-180">
+                        <path
+                            className="fill-blue-800"
+                            d="M 0,600 C 0,600 0,400 0,400 C 134.85714285714286,415.3571428571429 269.7142857142857,430.7142857142857 378,434 C 486.2857142857143,437.2857142857143 568.0000000000001,428.5 685,417 C 801.9999999999999,405.5 954.2857142857142,391.2857142857143 1086,388 C 1217.7142857142858,384.7142857142857 1328.857142857143,392.3571428571429 1440,400 C 1440,400 1440,600 1440,600 Z"
+                            stroke="none" />
+                    </svg>
+                </div>
+
+                <div className="h-0">
+                    <svg preserveAspectRatio="none" width="100%" height="300px" viewBox="0 0 1440 600" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" className="z-[20] relative -translate-y-40">
+                        <path
+                            className="fill-blue-500"
                             d="M 0,600 C 0,600 0,400 0,400 C 134.85714285714286,415.3571428571429 269.7142857142857,430.7142857142857 378,434 C 486.2857142857143,437.2857142857143 568.0000000000001,428.5 685,417 C 801.9999999999999,405.5 954.2857142857142,391.2857142857143 1086,388 C 1217.7142857142858,384.7142857142857 1328.857142857143,392.3571428571429 1440,400 C 1440,400 1440,600 1440,600 Z"
                             stroke="none" />
                     </svg>
