@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <div id="about" className="flex flex-col items-center lg:flex-row bg-blue-800 p-10 lg:p-20 xl:px-40 items-left gap-6 z-[30] py-0 lg:pt-8 pb-0 lg:pb-0 xl:pb-0">
-            <div className="flex flex-col items-center lg:items-start w-[80%] text-center lg:text-left mb-4 lg:mb-0 sm:pt-4">
+            <div className="flex flex-col items-center lg:items-start w-[80%] text-center lg:text-left mb-4 lg:mb-0 sm:pt-8">
                 <h1 className="text-white font-bold text-3xl md:text-4xl">
                     Using baseball to {" "}
                     <span className="text-orange-500">empower</span>
