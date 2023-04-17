@@ -32,22 +32,21 @@ export default function Navbar() {
     const [navBg, setNavBg] = useState(false);
 
     const changeNavBg = () => {
-        window.screenY >= 1 ? setNavBg(true) : setNavBg(false);
+        window.scrollY >= 80 ? setNavBg(true) : setNavBg(false);
         console.log("WORK")
     }
 
     useEffect(() => {
         window.addEventListener('scroll', changeNavBg);
-
         return () => window.removeEventListener('scroll', changeNavBg);
     })
 
     return (
-        <header className={`${navBg ? 'bg-blue-900' : 'bg-transparent'} flex flex-col items-center py-2 lg:py-4 w-full`}>
+        <header className={`flex flex-col items-center py-2 lg:py-4 w-full transition-colors duration-400 ${navBg || showDropdown ? 'bg-blue-900' : 'bg-transparent'} `}>
             <div className="container px-4 lg:flex lg:items-center lg:justify-around w-full">
                 <div className="flex justify-between items-center">
                     <Link href="/#home" className="flex flex-row items-center gap-4 font-bold text-xl">
-                        <Image src={Logo} alt="logo" width={100} height={100} />
+                        <Image src={Logo} alt="logo" width={64} height={64} />
                         <h2 className="text-2xl text-white inline-block">HomeRunsForHope</h2>
                     </Link>
 
@@ -62,14 +61,14 @@ export default function Navbar() {
                 <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-col lg:flex-row mt-3 lg:mt-0 lg:text-lg`}>
                     {menuItems.map((menuItem, i) => (
                         <Link
-                            className="text-white hover:bg-blue-900 hover:rounded-lg p-2 lg:px-4 lg:mx-2 duration-100"
+                            className="text-gray-300 hover:bg-gray-200/25 hover:text-white p-2 lg:px-4 lg:mx-2 rounded duration-300 transition-colors"
                             href={menuItem.path}
                             key={i}
                         >
                             {menuItem.name}
                         </Link>
                     ))}
-                    <Link href="." className="text-blue-200 hover:bg-blue-500 hover:text-white text-center border border-solid border-blue-900 mt-1 lg:mt-0 lg:ml-1 p-2 lg:px-4 lg:mx-2 rounded">
+                    <Link href="." className="text-blue-200 hover:bg-blue-500 hover:text-white text-center border border-solid border-blue-500 mt-1 lg:mt-0 lg:ml-1 p-2 lg:px-4 lg:mx-2 rounded">
                         Sponsor Us
                     </Link>
                 </div>
