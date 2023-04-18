@@ -3,6 +3,7 @@ import Image from "next/image";
 import About from "@/components/about";
 import Event from "@/components/event";
 import Sponsors from "@/components/sponsors";
+import Footer from "@/components/footer";
 
 export default function Home() {
     return (
@@ -106,6 +107,7 @@ export default function Home() {
             </div>
 
             <Sponsors />
+            <Footer />
         </div>
   )
 }

@@ -21,10 +21,10 @@ const menuItems = [
         name: "Sponsors",
         path: "/#sponsors"
     },
-    {
-        name: "Team",
-        path: "/#team"
-    }
+    // {
+    //     name: "Team",
+    //     path: "/#team"
+    // }
 ]
 
 export default function Navbar() {
@@ -33,7 +33,6 @@ export default function Navbar() {
 
     const changeNavBg = () => {
         window.scrollY >= 80 ? setNavBg(true) : setNavBg(false);
-        console.log("WORK")
     }
 
     useEffect(() => {
