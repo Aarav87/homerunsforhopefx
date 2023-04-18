@@ -58,7 +58,7 @@ export default function Home() {
 
             <About />
 
-            <div>
+            <div className="pointer-events-none">
                 <div className="h-0">
                     <svg preserveAspectRatio="none" width="100%" height="200px" viewBox="0 0 1440 600" fill="none"
                          xmlns="http://www.w3.org/2000/svg" className="z-[20] relative rotate-180">
