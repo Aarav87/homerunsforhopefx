@@ -1,4 +1,4 @@
-import {GoClock, GoLocation} from "react-icons/all";
+import {GoClock, GoLocation} from "react-icons/go";
 
 export default function Event() {
     return (
