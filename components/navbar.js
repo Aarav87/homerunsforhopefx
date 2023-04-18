@@ -67,9 +67,12 @@ export default function Navbar() {
                             {menuItem.name}
                         </Link>
                     ))}
-                    <Link href="." className="text-blue-200 hover:bg-blue-500 hover:text-white text-center border border-solid border-blue-500 mt-1 lg:mt-0 lg:ml-1 p-2 lg:px-4 lg:mx-2 rounded">
+                    <a href="/sponsorship_package.pdf"
+                       target="_blank" rel="noreferrer"
+                       className="text-blue-200 hover:bg-blue-500 hover:text-white text-center border border-solid border-blue-500 mt-1 lg:mt-0 lg:ml-1 p-2 lg:px-4 lg:mx-2 rounded"
+                    >
                         Sponsor Us
-                    </Link>
+                    </a>
                 </div>
             </div>
         </header>
