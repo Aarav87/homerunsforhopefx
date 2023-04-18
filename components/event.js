@@ -2,7 +2,7 @@ import {GoClock, GoLocation} from "react-icons/go";
 
 export default function Event() {
     return (
-        <div id="event" className="flex flex-col items-center p-10 pt-16 md:py-16 md:pt-25 lg:pb-24 lg:pt-25 xl:pt-30 z-10 text-center bg-[#D8863B]">
+        <div id="event" className="flex flex-col items-center p-10 pt-16 md:py-16 md:pt-25 lg:pb-0 lg:pt-25 xl:pt-30 z-10 text-center bg-[#D8863B]">
             <div className="flex flex-col text-center mb-8">
                 <h1 className="text-4xl text-white font-bold">Event Details</h1>
             </div>
